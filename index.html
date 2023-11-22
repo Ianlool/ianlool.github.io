@@ -1,0 +1,327 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+
+<head>
+	<title>XBOX FUSION</title>
+	<link href="css/responsividade.css" rel='stylesheet' type='text/css' />
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+
+	<script src="js/slide1.js"></script>
+
+</head>
+
+<body>
+	<div class="top-banner">
+		<div class="header">
+			<div class="container">
+				<div class="headr-left">
+					<div class="social">
+						<a href="#"><i class="facebook"></i></a>
+						<a href="#"><i class="pin"></i></a>	
+					</div>
+					
+					<div class="clearfix"></div>
+				</div>
+				<div class="headr-right">
+					<div class="details">
+						<ul>
+							<li><a href="""><span class=" glyphicon glyphicon-envelope"
+									aria-hidden="true"></span>XboxFusion@gmail.com</a></li>
+							<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>(61) 9-4002-8922
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="banner-info">
+			<div class="container">
+				<div class="logo">
+					<h1><a href="index.html">XBOX FUSION</a></h1>
+				</div>
+				<div class="top-menu">
+					<span class="menu"></span>
+					<ul class="nav1">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="sobre.html">Sobre</a></li>
+						<li><a href="Semi.html">Semi-Novos</a></li>
+						<li><a href="carrinho.html">Carrinho</a></li>
+						<li><a href="contato.html">Email</a></li>
+						<li><a href="login.html">Login</a></li>
+						
+					</ul>
+				</div>
+				<script>
+					$("span.menu").click(function () {
+						$("ul.nav1").slideToggle(300, function () {});
+					});
+				</script>
+
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<script src="js/responsividadeslides.js"></script>
+	<script>
+		$(function () {
+			$("#slider").responsiveSlides({
+				auto: true,
+				nav: false,
+				speed: 500,
+				namespace: "callbacks",
+				pager: true,
+			});
+		});
+	</script>
+	<div class="slider">
+		<div class="callbacks_container">
+			<ul class="rslides" id="slider">
+
+				<div class="slid banner1">
+					<div class="caption">
+						<h3><strong>Halo-The Master Chief Collection</strong></h3>
+						<p><strong>"The Master Chief Collection" reúne os principais jogos da saga "Halo", proporcionando uma
+							jornada épica com o lendário Master Chief.</strong></p>
+					</div>
+				</div>
+
+
+				<div class="slid banner2">
+					<div class="caption">
+						<h3><strong>GOD OF WAR RAGNAROK</strong></h3>
+						<p><strong>"God of War: Ragnarok" continua a saga de Kratos, explorando a mitologia nórdica em uma
+							emocionante e intensa busca pelo poder e redenção.</strong></p>
+					</div>
+				</div>
+
+
+				<div class="slid banner3">
+					<div class="caption">
+						<h3><strong>Forza  Horizon 5</strong></h3>
+						<p><strong> Forza Horizon 5" oferece uma experiência de corrida envolvente e visualmente deslumbrante,
+							levando os jogadores a explorar os deslumbrantes cenários do México enquanto competem em uma
+							variedade de desafios automobilísticos.</strong></p>
+					</div>
+				</div>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="container">
+			<div class="top-games">
+				<h3>Top Jogos</h3>
+				<span></span>
+			</div>
+			<div class="top-game-grids">
+				<ul id="flexiselDemo1">
+					<li>
+						<div class="game-grid">
+							<h4>Gta V</h4>
+							<p>Explore Los Santos em uma saga criminal intensa.</p>
+							<img src="images/t1.jpg" class="img-responsive" alt="" />
+						</div>
+					</li>
+					<li>
+						<div class="game-grid">
+							<h4>Need For Speed World</h4>
+							<p>Corridas online emocionantes e personalize carros para a vitória</p>
+							<img src="images/t3.jpg" class="img-responsive" alt="" />
+						</div>
+					</li>
+					<li>
+						<div class="game-grid">
+							<h4>Nier Automota
+							</h4>
+							<p>Ação com narrativa envolvente em um mundo apocalíptico.</p>
+							<img src="images/t4.jpg" class="img-responsive" alt="" />
+						</div>
+					</li>
+					<li>
+						<div class="game-grid">
+							<h4>NFS Unbound</h4>
+							<p>Corra com Graficos que parecem Cartoon.</p>
+							<img src="images/t2.jpg" class="img-responsive" alt="" />
+						</div>
+					</li>
+				</ul>
+
+				<script type="text/javascript">
+					$(window).load(function () {
+						$("#flexiselDemo1").flexisel({
+							visibleItems: 4,
+							animationSpeed: 1000,
+							autoPlay: true,
+							autoPlaySpeed: 3000,
+							pauseOnHover: true,
+							enableResponsiveBreakpoints: true,
+							responsiveBreakpoints: {
+								portrait: {
+									changePoint: 480,
+									visibleItems: 1
+								},
+								landscape: {
+									changePoint: 640,
+									visibleItems: 2
+								},
+								tablet: {
+									changePoint: 768,
+									visibleItems: 3
+								}
+							}
+						});
+					});
+				</script>
+				<script type="text/javascript" src="js/slide2.js"></script>
+			</div>
+		</div>
+	</div>
+	<div class="latest">
+		<div class="container">
+			<div class="latest-games">
+				<h3>Jogos Marcantes</h3>
+				<span></span>
+			</div>
+			<div class="latest-top">
+				<div class="col-md-5 trailer-text">
+					<div class="sub-trailer">
+						<div class="col-md-4 sub-img">
+							<img src="images/v2.jpg" alt="img07" />
+						</div>
+						<div class="col-md-8 sub-text">
+							<a href="https://www.youtube.com/watch?v=wZ-T3BpaUUA">"Batman: The Dark Knight Rises"
+								Review</a>
+							<p> oferece uma experiência intensa de ação e aventura, permitindo que os jogadores
+								vivenciem o universo do Cavaleiro das Trevas.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="sub-trailer">
+						<div class="col-md-4 sub-img">
+							<img src="images/v1.jpg" alt="img07" />
+						</div>
+						<div class="col-md-8 sub-text">
+							<a href="https://www.youtube.com/watch?v=aGQUIwILJw4"> "Spiderman 2" Review </a>
+							<p>traz a emocionante jornada de Peter Parker, oferecendo uma experiência de mundo aberto
+								com ação intensa, habilidades aracnídeas e missões cativantes.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="sub-trailer">
+						<div class="col-md-4 sub-img">
+							<img src="images/v3.jpg" alt="img07" />
+						</div>
+						<div class="col-md-8 sub-text">
+							<a href="https://www.youtube.com/watch?v=egikJ-M8wA0">"Tom Clancy's Splinter Cell:
+								Conviction" Review</a>
+							<p>Sam Fisher embarca em uma missão de vingança, combinando ação furtiva e intensos combates
+								para desvendar uma conspiração mortal.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<div class="col-md-7 trailer">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/ZBPhviGYhng?si=v13TYw1ypazeoe_E"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen></iframe>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<div class="poster">
+		<div class="container">
+			<div class="poster-info">
+				<h3>Battlefield 4 foi tudo isso mesmo? </h3>
+				<p>"Querida equipe do Battlefield, por favor, tragam de volta o Battlefield 4! A comunidade está sedenta
+					por aqueles momentos épicos, mapas incríveis e a jogabilidade que fez do BF4 um clássico
+					inesquecível. Reviver essas experiências seria um presente para todos os fãs. Voltemos à linha de
+					frente juntos! #BringBackBF4 🚀"</p>
+				<a class="hvr-bounce-to-bottom" href="https://www.adrenaline.com.br/games/servidores-de-battlefield-4-aumentam-gracas-a-jogadores-ansiosos-por-battlefield-2042/">Ler Mais</a>
+			</div>
+		</div>
+	</div>
+	<div class="x-box">
+		<div class="container">
+			<div class="x-box_sec">
+				<div class="col-md-7 x-box-left">
+					<h2>XBOX 360</h2>
+					<h3>O xbox 360 virou game retro?</h3>
+					<p>Retro ou não, o Xbox 360 deixou um legado inegável. Os jogos eram fantásticos, mas, sinceramente,
+						acho que já passou da hora de aceitar que ele é um clássico, contudo A definição de "retrô" pode
+						variar, mas, considerando a geração atual, muitos podem ver o Xbox 360 como um console clássico.
+						Quais são seus jogos favoritos que o tornam memorável?</p>
+					<a class="hvr-bounce-to-top"
+						href="https://answers.microsoft.com/en-us/xbox/forum/all/ent%C3%A3o-%C3%A9-isso-o-xbox-360-morreu-then/3a9c427b-d81f-4669-aeeb-f46493c622a5">Ler
+						Mais</a>
+				</div>
+				<div class="col-md-5 x-box-right">
+					<img src="images/xbox.jpg" class="img-responsive" alt="" />
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="footer-grids">
+				<div class="col-md-3 ftr-info">
+					<h3>Sobre-nós</h3>
+					<p>Na Xbox Fusion, somos mais do que uma loja; somos uma comunidade unida pela paixão pelos jogos e
+						pela evolução tecnológica. Nossa equipe é composta por especialistas em games prontos para
+						orientá-lo na escolha dos melhores títulos e equipamentos.</p>
+				</div>
+				<div class="col-md-3 ftr-grid">
+					<h3>Categorias </h3>
+					<ul class="ftr-list">
+						<li><a href="#">Ação</a></li>
+						<li><a href="#">Corrida</a></li>
+						<li><a href="#">Aventura</a></li>
+						<li><a href="#">Simulação</a></li>
+						<li><a href="#">FPS</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 ftr-grid">
+					<h3>Platforma</h3>
+					<ul class="ftr-list">
+						<li><a href="#">Pc</a></li>
+						<li><a href="#">Ps4</a></li>
+						<li><a href="#">XBOX 360</a></li>
+						<li><a href="#">XBOX ONE</a></li>
+						<li><a href="#">XBOX SERIES S|X</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 ftr-grid">
+					<h3>Informações</h3>
+					<ul class="ftr-list">
+						<li><a href="#">Contato</a></li>
+						<li><a href="#">Loja Fisica</a></li>
+						<li><a href="#">Termos & Condições</a></li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<div class="copywrite">
+		<div class="container">
+			<p> © 2023 XboxFusion. Todos os direitos resevados | Feito Por <a href="">XboxFusion</a></p>
+		</div>
+	</div>
+</body>
+
+</html>

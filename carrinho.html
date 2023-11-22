@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+
+<head>
+    <title>XBOX FUSION</title>
+    <link href="css/responsividade.css" rel='stylesheet' type='text/css' />
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <link href="css/carrinho.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript">
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+
+    <script src="js/slide1.js"></script>
+
+</head>
+
+<body>
+    <div class="top-banner">
+        <div class="header">
+            <div class="container">
+                <div class="headr-left">
+                    <div class="social">
+                        <a href="#"><i class="facebook"></i></a>
+                        <a href="#"><i class="pin"></i></a>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+                <div class="headr-right">
+                    <div class="details">
+                        <ul>
+                            <li><a href="""><span class=" glyphicon glyphicon-envelope"
+                                    aria-hidden="true"></span>XboxFusion@gmail.com</a></li>
+                            <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>(61) 9-4002-8922
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="banner-info">
+            <div class="container">
+                <div class="logo">
+                    <h1><a href="index.html">XBOX FUSION</a></h1>
+                </div>
+                <div class="top-menu">
+                    <span class="menu"></span>
+                    <ul class="nav1">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="Semi.html">Semi-Novos</a></li>
+                        <li><a href="carrinho.html">Carrinho</a></li>
+                        <li><a href="contato.html">Email</a></li>
+                        <li><a href="login.html">Login</a></li>
+
+                    </ul>
+                </div>
+                <script>
+                    $("span.menu").click(function () {
+                        $("ul.nav1").slideToggle(300, function () {});
+                    });
+                </script>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/responsividadeslides.js"></script>
+    <script>
+        $(function () {
+            $("#slider").responsiveSlides({
+                auto: true,
+                nav: false,
+                speed: 500,
+                namespace: "callbacks",
+                pager: true,
+            });
+        });
+    </script>
+    <div class="slider">
+        <div class="callbacks_container">
+            <ul class="rslides" id="slider">
+
+                <div class="slid banner1">
+                    <div class="caption">
+                        <h3><strong></strong></h3>
+                        <p><strong></strong></p>
+                    </div>
+                </div>
+
+
+                <div class="slid banner2">
+                    <div class="caption">
+                        <h3><strong></strong></h3>
+                        <p><strong></strong></p>
+                    </div>
+                </div>
+
+
+                <div class="slid banner3">
+                    <div class="caption">
+                        <h3><strong></strong></h3>
+                        <p><strong></strong></p>
+                    </div>
+                </div>
+
+            </ul>
+        </div>
+    </div>
+    <h1 class="xbox-color">Produtos</h1>
+    <div class="products-container">
+        <div class="product">
+            <img src="images/re7.jpg" alt="Produto 1">
+            <h2>NFSMW</h2>
+            <h5><a href="paginadojogo.html">Por Apenas R$: 70,99</a></h5>
+            <button onclick="addToCart('NFSMW')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="images/forza2.webp" alt="Produto 1">
+            <h2>Forza 2</h2>
+            <h5><a href="Forza.html">Por Apenas R$: 50,99</a></h5>
+            <button onclick="addToCart('Forza Horizon 2')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="images/tekken62.jpg" alt="Produto 1">
+            <h2>Tekken 6</h2>
+            <h5><a href="tekken.html">Por Apenas R$: 40,99</a></h5>
+            <button onclick="addToCart('Tekken 6')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="images/black1.jpg" alt="Produto 1">
+            <h2>Black</h2>
+            <h5><a href="black.html">Por Apenas R$: 65,99</a></h5>
+            <button onclick="addToCart('Black')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="images/gtav1.jpg" alt="Produto 1">
+            <h2>GTA V</h2>
+            <h5><a href="gtav.html">Por Apenas R$: 55,99</a></h5>
+            <button onclick="addToCart('GTA V')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="images/cod2.jpg" alt="Produto 1">
+            <h2>COD 2</h2>
+            <h5><a href="cod.html">Por Apenas R$: 60,99</a></h5>
+            <button onclick="addToCart('Cod BO 2')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="images/re6.jpg" alt="Produto 1">
+            <h2>Kof XII</h2>
+            <h5><a href="kof.html">Por Apenas R$: 30,99</a></h5>
+            <button onclick="addToCart('KOF XII')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="images/re8.jpg" alt="Produto 1">
+            <h2>Minecraft</h2>
+            <h5><a href="minecraft.html">Por Apenas R$: 25,99</a></h5>
+            <button onclick="addToCart('Mine xbox360')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="images/re9.jpg" alt="Produto 1">
+            <h2>Tomb Raider</h2>
+            <h5><a href="tombraider.html">Por Apenas R$: 70,99</a></h5>
+            <button onclick="addToCart('Tomb Raider')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="images/hogwats1.webp" alt="Produto 1">
+            <h2>Hogwarts Legacy</h2>
+            <h5><a href="hogwarts.html">Por Apenas R$: 150,99</a></h5>
+            <button onclick="addToCart('Hogwarts Legacy')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="images/sea1.jpg" alt="Produto 2">
+            <h2>Sea of Thieves</h2>
+            <h5><a href="sea.html">Por Apenas R$: 90,99</a></h5>
+            <button onclick="addToCart('Sea of Thieves')">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product">
+            <img src="images/resident.png" alt="Produto 2">
+            <h2>RE 4 Remake</h2>
+            <h5><a href="re4remake.html">Por Apenas R$: 110,99</a></h5>
+            <button onclick="addToCart('Re4 Remake')">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <div class="cart-container">
+        <ul id="cart"></ul>
+        <button onclick="clearCart()">Limpar Carrinho</button>
+        <button onclick="finalizarCompra()">Finalizar Compra</button> 
+    </div>
+
+
+
+    <script src="js/scriptcarrinho.js"></script>
+    <div class="footer">
+        <div class="container">
+            <div class="footer-grids">
+                <div class="col-md-3 ftr-info">
+                    <h3>Sobre-nós</h3>
+                    <p>Na Xbox Fusion, somos mais do que uma loja; somos uma comunidade unida pela paixão pelos jogos e
+                        pela evolução tecnológica. Nossa equipe é composta por especialistas em games prontos para
+                        orientá-lo na escolha dos melhores títulos e equipamentos.</p>
+                </div>
+                <div class="col-md-3 ftr-grid">
+                    <h3>Categorias </h3>
+                    <ul class="ftr-list">
+                        <li><a href="#">Ação</a></li>
+                        <li><a href="#">Corrida</a></li>
+                        <li><a href="#">Aventura</a></li>
+                        <li><a href="#">Simulação</a></li>
+                        <li><a href="#">FPS</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 ftr-grid">
+                    <h3>Platforma</h3>
+                    <ul class="ftr-list">
+                        <li><a href="#">Pc</a></li>
+                        <li><a href="#">Ps4</a></li>
+                        <li><a href="#">XBOX 360</a></li>
+                        <li><a href="#">XBOX ONE</a></li>
+                        <li><a href="#">XBOX SERIES S|X</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 ftr-grid">
+                    <h3>Informações</h3>
+                    <ul class="ftr-list">
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Loja Fisica</a></li>
+                        <li><a href="#">Termos & Condições</a></li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="copywrite">
+        <div class="container">
+            <p> © 2023 XboxFusion. Todos os direitos resevados | Feito Por <a href="">XboxFusion</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

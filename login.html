@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<title>XBOX FUSION</title>
+	<link href="css/responsividade.css" rel='stylesheet' type='text/css' />
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+
+	<script src="js/slide1.js"></script>
+
+</head>
+
+<body>
+	<div class="top-banner">
+		<div class="header">
+			<div class="container">
+				<div class="headr-left">
+					<div class="social">
+						<a href="#"><i class="facebook"></i></a>
+						<a href="#"><i class="pin"></i></a>	
+					</div>
+					
+					<div class="clearfix"></div>
+				</div>
+				<div class="headr-right">
+					<div class="details">
+						<ul>
+							<li><a href="""><span class=" glyphicon glyphicon-envelope"
+									aria-hidden="true"></span>XboxFusion@gmail.com</a></li>
+							<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>(61) 9-4002-8922
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="banner-info">
+			<div class="container">
+				<div class="logo">
+					<h1><a href="index.html">XBOX FUSION</a></h1>
+				</div>
+				<div class="top-menu">
+					<span class="menu"></span>
+					<ul class="nav1">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="sobre.html">Sobre</a></li>
+						<li><a href="Semi.html">Semi-Novos</a></li>
+						<li><a href="carrinho.html">Carrinho</a></li>
+						<li><a href="contato.html">Email</a></li>
+						<li><a href="login.html">Login</a></li>
+						
+					</ul>
+				</div>
+                <script>
+					$("span.menu").click(function () {
+						$("ul.nav1").slideToggle(300, function () {});
+					});
+				</script>
+
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<script src="js/responsividadeslides.js"></script>
+	<script>
+		$(function () {
+			$("#slider").responsiveSlides({
+				auto: true,
+				nav: false,
+				speed: 500,
+				namespace: "callbacks",
+				pager: true,
+			});
+		});
+	</script>
+	<div class="slider">
+		<div class="callbacks_container">
+			<ul class="rslides" id="slider">
+
+				<div class="slid banner1">
+					<div class="caption">
+    
+    <style>
+      body {
+    background-color: #107c10;
+    margin: 0;
+}
+.container-envolvente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+.login-container h2 {
+    text-align: center;
+    color: #58ad93;
+    margin-bottom: 1rem;
+}
+.login-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.login-container input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.login-container button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #58ad93;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.login-container button:hover {
+    background-color: #3f806e;
+}
+.login-container p {
+    text-align: center;
+    color: #58ad93;
+    margin-top: 1rem;
+}
+    </style>
+    
+</head>
+
+<div class="container-envolvente">
+	<div class="login-container">
+		<h2><strong>Login</strong></h2>
+		<form id="login-form">
+			<label for="username">Usuário:</label>
+			<input type="text" id="username" name="username" required>
+			<br>
+			<label for="password">Senha:</label>
+			<input type="password" id="password" name="password" required>
+			<br>
+			<button type="submit">Login</button>
+		</form>
+		<p id="success-message"></p>
+	</div>
+</div>
+
+<script>
+	const loginForm = document.getElementById('login-form');
+	const successMessage = document.getElementById('success-message');
+
+	loginForm.addEventListener('submit', (event) => {
+		event.preventDefault();
+
+		const username = document.getElementById('username').value;
+		const password = document.getElementById('password').value;
+
+		if (username && password) {
+			sessionStorage.setItem('username', username);
+			localStorage.setItem('username', username);
+			successMessage.textContent = `Olá, ${username}! Você está logado.`;
+		}
+	});
+
+	const storedUsername = sessionStorage.getItem('username') || localStorage.getItem('username');
+	if (storedUsername) {
+		successMessage.textContent = `Olá, ${storedUsername}! Você está logado.`;
+	}
+</script>
+</body>
+</html>
